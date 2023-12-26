@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Build files
+/build
+
+# Logs
+/logs
+
+# Runtime data
+/pids
+*.pid
+*.log
+
+# IDE configuration
+/.vscode
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

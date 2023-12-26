@@ -1,0 +1,40 @@
+1. Fetch All Notes (GET /):
+HTTP Method: GET
+Endpoint: /
+Operation:
+Upon receiving a request, use Note.find() to retrieve all notes from the Note model.
+Send the found notes as a JSON response.
+In case of an error, send the error message in JSON format.
+
+2. Fetch a Specific Note (GET /:id):
+HTTP Method: GET
+Endpoint: /:id
+Operation:
+Upon receiving a request, use Note.findById(req.params.id) to find a note with the provided id parameter.
+Send the found note as a JSON response.
+In case of an error, send the error message in JSON format.
+
+3. Create a New Note (POST /):
+HTTP Method: POST
+Endpoint: /
+Operation:
+Upon receiving a request, create a new Note with the title and content provided in the request.
+Save the created note using note.save() to store it in the database.
+Send the saved note as a JSON response.
+In case of an error, send the error message in JSON format.
+
+4. Update a Note (PATCH /:id):
+HTTP Method: PATCH
+Endpoint: /:id
+Operation:
+Upon receiving a request, update the note with the provided id parameter using Note.updateOne().
+Send the updated note's details as a JSON response.
+In case of an error, send the error message in JSON format.
+
+5. Delete a Note (DELETE /:id):
+HTTP Method: DELETE
+Endpoint: /:id
+Operation:
+Upon receiving a request, delete the note with the provided id parameter using Note.deleteOne().
+Send the details of the deleted note as a JSON response.
+In case of an error, send the error message in JSON format.
